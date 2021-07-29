@@ -1,0 +1,184 @@
+.location ,.faq {
+  padding-top: 96px;
+  padding-bottom: 160px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  @include pad {
+    padding-top: 60px;
+    padding-bottom: 96px;
+  }
+  @include phone {
+    padding-top: 174px; //加上被遮檔的高度
+    padding-bottom: 56px;
+  }
+}
+
+.location-title,.faq-title {
+  font-size: $fz-2l;
+  line-height: 1.66666;
+  color: $location-title;
+  font-weight: 700;
+  border-left: 8px solid $location-border;
+  padding-left: 16px;
+  margin-bottom: 60px;
+  @include pad {
+    border-left: 4px solid $location-border;
+    margin-bottom: 40px;
+  }
+  @include phone {
+    font-size: $fz-3xm;
+    line-height: 2.8571;
+    margin-bottom: 24px;
+  }
+}
+.choose {
+  font-weight: 400;
+  margin-bottom: 32px;
+  span {
+    margin-right: 20px;
+    width: 8.64864%;
+    font-size: $fz-xm;
+    line-height: 1.25;
+    @include pad {
+      width: 8.67208%;
+      margin-right: 12px;
+      font-size: $fz-base;
+      line-height: 1.875;
+    }
+    @include phone {
+      width: 16.2319%;
+      font-size: $fz-sm;
+      line-height: 2.14285;
+    }
+  }
+  @include phone {
+    display: flex;
+    margin-bottom: 24px;
+  }
+  @include phone {
+    margin-bottom: 20px;
+  }
+  select {
+    width: 29.18918%;
+    padding: 8px auto 11px 19px;
+    font-size: $fz-sm2;
+    line-height: 1.4444;
+    @include pad {
+      width: 32.11382%;
+      padding: 10px auto 12px 16px ;
+      font-size: $fz-base;
+      line-height: 1.5;
+    }
+    @include phone {
+      width: 80.28985%;
+      padding: 7px auto 12px 16px;
+      font-size: $fz-sm;
+      line-height: 1.71428;
+    }
+  }
+}
+
+.location-cardList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &:after {
+    content: "";
+    width: 30.70175%;
+  }
+  @include phone {
+    justify-content: center;
+  }
+}
+
+.location-card {
+  width: 30.70175%;
+  margin-bottom: 32px;
+  @include pad {
+    width: 47.9167%;
+    margin-bottom: 20px;
+  }
+  @include phone {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  img {
+    object-fit: cover;
+    height: 240px;
+    width: 100%;
+  }
+}
+
+.branch {
+  width: 100%;
+  border: 1px solid #00000020;
+  padding: 12px 130px 12px 24px;
+  font-size: $fz-xm;
+  @include pad {
+    font-size: $fz-base;
+    line-height: 1.5;
+    padding: 8px 110px 8px 24px;
+  }
+}
+.info {
+  padding: 16px 24px;
+  border: 1px solid #00000020;
+  line-height: 1.5;
+  @include pad {
+    padding: 16px 28px 16px 24px;
+  }
+  @include phone {
+    padding: 16px 43px 16px 24px;
+  }
+  li {
+    display: flex;
+  }
+}
+.icon-block {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 8px;
+  @include pad {
+    width: 20px;
+    height: 20px;
+  }
+  & .material-icons-outlined {
+    font-size: $fz-m;
+    @include pad {
+      font-size: $fz-base;
+    }
+  }
+}
+.btn-detail {
+  width: 100%;
+  background: #000;
+  a {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: $fz-sm3;
+    line-height: 1.42105;
+    @include pad {
+      font-size: $fz-sm;
+      line-height: 1.5;
+      padding-top: 16px;
+    }
+    @include phone {
+    }
+  }
+  &:hover {
+    background: $primary-color;
+  }
+}
+
+.no_content {
+  height: 146px;
+  @include phone {
+    height: 146px;
+  }
+}

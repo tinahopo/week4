@@ -1,0 +1,63 @@
+.faq {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.about {
+  font-weight: 400;
+  font-size: $fz-2xm;
+  line-height: 1.9688;
+  margin-bottom: 36px;
+  @include pad {
+    font-size: $fz-2l;
+    line-height: 1.66666;
+    margin-bottom: 32px;
+  }
+  @include phone {
+    font-size: $fz-3xm;
+    line-height: 2.85714;
+    margin-bottom: 24px;
+  }
+}
+
+.questionList li {
+  margin-bottom: 32px;
+  @include pad {
+    margin-bottom: 24px;
+  }
+  @include phone {
+    margin-bottom: 20px;
+  }
+}
+
+.question {
+  font-weight: 700;
+  font-size: $fz-m;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  @include phone {
+    font-size: $fz-base;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  .answer {
+    font-weight: 400;
+    font-size: $fz-base;
+    line-height: 1.5;
+
+    @include phone {
+      font-size: $fz-sm;
+    }
+  }
+}
+
+.answer-body {
+display: flex;
+  .blank {
+    margin-left: 95px;
+    @include pad {
+      margin-left: 60px;
+    }
+    @include phone {
+      margin-left: 0;
+    }
+  }
+}

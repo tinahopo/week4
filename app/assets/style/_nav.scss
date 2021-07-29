@@ -1,0 +1,61 @@
+nav {
+  background: $primary-color;
+  padding-left: 4.6%;
+  padding-right: 4.6%;
+  @include phone {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    z-index: 10;
+  }
+}
+a {
+  color: $link-color;
+}
+
+.logo a {
+  margin: 30px auto;
+  display: block;
+  width: 80px;
+  height: 49px;
+  background: url(../images/logo.png) no-repeat;
+  @include hide-text;
+  @include phone {
+    margin: 10px 0;
+    width: 48px;
+    height: 30px;
+    background: url(../images/logo-new.png) no-repeat;
+  }
+}
+.menu {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: $fz-m;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  @include phone {
+    flex-wrap: wrap;
+  }
+  li {
+    @include phone {
+      margin-left: 0;
+      width: 50%;
+    }
+  }
+}
+
+.menu li a{
+  display: block;
+  padding: 39.5px 32px;
+  @include phone {
+    text-align: center;
+    display: block;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+  }
+  &:hover {
+    background: $secondary;
+  }
+}
+
